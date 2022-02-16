@@ -13,3 +13,5 @@ The files are GZIP'd.
 When you uncompress them, inside the files you will find a series of root TAG_Compounds concatenated together.
 
 Using PocketMine-MP, they can be decoded like so: `var_dump((new NetworkNbtSerializer())->readMultiple(file_get_contents($file)));`
+
+In this format, the palettes can be provided to [pmmp/mapping](https://github.com/pmmp/mapping) as input palettes to generate palette mapping tables (though you will need to unzip them first).
