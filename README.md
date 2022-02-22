@@ -8,10 +8,8 @@ Versions older than 1.9 are not included, since versions prior to 1.9 did not us
 Note that in some cases (e.g. 1.9, 1.10, 1.12) these are **NOT** the same as the palettes sent over the wire. Versions prior to 1.13 still used legacy ID + meta to represent blocks; however, they used blockstate NBT to represent blockitems on disk, which is why their palettes are present here.
 
 ## File format
-The files are GZIP'd.
-
-When you uncompress them, inside the files you will find a series of root TAG_Compounds concatenated together.
+Inside the files you will find a series of root TAG_Compounds concatenated together.
 
 Using PocketMine-MP, they can be decoded like so: `var_dump((new NetworkNbtSerializer())->readMultiple(file_get_contents($file)));`
 
-In this format, the palettes can be provided to [pmmp/mapping](https://github.com/pmmp/mapping) as input palettes to generate palette mapping tables (though you will need to unzip them first).
+In this format, the palettes can be directly provided to [pmmp/mapping](https://github.com/pmmp/mapping) as input palettes to generate palette mapping tables.
