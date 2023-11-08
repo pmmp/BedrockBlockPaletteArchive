@@ -1,7 +1,7 @@
 # BlockPaletteArchive
 Archive of previous Minecraft Bedrock block palettes of interest, useful for world format upgrading
 
-This repository contains (to my knowledge, at the time of writing) every unique NBT block palette from 1.9 to 1.19.0. This is highly useful for testing blockstate deserializers designed to handle older worlds.
+This repository contains (to my knowledge, at the time of writing) every unique NBT block palette from 1.9 to 1.20.50.23 beta. This is highly useful for testing blockstate deserializers designed to handle older worlds.
 
 Versions older than 1.9 are not included, since versions prior to 1.9 did not use NBT blockstates, relying exclusively on ID and meta.
 
